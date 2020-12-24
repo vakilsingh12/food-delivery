@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizaa Order App</title>
+    <title>Food Order App</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    hiii
+    <nav class="container mx-auto flex items-center justify-between py-2">
+        <div class="flex items-center">
+            <img src="https://i.pinimg.com/474x/85/9f/8d/859f8d87d92a37ce8aba8962e43c5976.jpg" width="60" height="40" alt="logo">Food First
+        </div>
+        <div>
+            <ul class="flex justify-around">
+                <li class="ml-6"><a href="">Menu</a></li>
+                <li class="ml-6"><a href="">Offers</a></li>
+                <li class="ml-6"><a href="">Login</a></li>
+                <li class="ml-6"><a href="">Register</a></li>
+                <li class="ml-6"><img src="" alt=""></li>
+                <li class="ml-6"><a class="inline-block px-4 py-2 rounded-full" href="#"><img style="color: #fff;" width="20" height="20" src="https://lh3.googleusercontent.com/proxy/cnSzGO9GXTbzPpkOI5eJAfBhsNE3QweDaLif8wxHlwYPgrNicVri0u4387pyx0PuXIXYnLThiHtWuwXdzqiUkMIX2AUjBjCIGimkP2uL_SGLbGQL6dIQnNZ58EpmSkK8_A" alt=""></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero py-12">
+     <div class="container mx-auto flex justify-between items-center">
+         <div class="w-1/2">
+             <h1 class="text-5xl font-bold">Delicious Food</h1>
+             <h4><em>Real Speciality of Foods !</em></h4><br>
+             <button class="uppercase px-8 py-2 rounded-full bg-blue-300 text-blue-600 max-w-max shadow-sm hover:shadow-md">Order Now</button>
+         </div>
+         <div class="w-1/2">
+             <img width="700" src="https://www.diabetes.org/sites/default/files/styles/full_width/public/2019-04/Hero%20-%20Tips%20and%20Meal%20Planning_%20Meal%20Ideas%402x-min.jpg" alt="food">
+         </div>
+     </div>
+    </section>
+    <section class="menu container mx-auto py-8">
+    <h1 class="text-xl font-bold mb-8">Our Food Services</h1>
+    <div class="grid grid-cols-4 gap-x-12 gap-y-16">
+        <div class="w-64">
+            <img class="h-40 mb-2 mx-auto" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
+            <div class="text-center">
+                <h2 class="mb-1 text-lg">Fruit Chat</h2>
+                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
+                <div class="flex justify-around mt-2">
+                    <span class="font-bold text-lg">Rs: 50</span>
+                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64">
+            <img class="h-40 mb-2 mx-auto" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
+            <div class="text-center">
+                <h2 class="mb-1 text-lg">Fruit Chat</h2>
+                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
+                <div class="flex justify-around mt-2">
+                    <span class="font-bold text-lg">Rs: 50</span>
+                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64">
+            <img class="h-40 mb-2 mx-auto" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
+            <div class="text-center">
+                <h2 class="mb-1 text-lg">Fruit Chat</h2>
+                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
+                <div class="flex justify-around mt-2">
+                    <span class="font-bold text-lg">Rs: 50</span>
+                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64">
+            <img class="h-40 mb-2 mx-auto" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
+            <div class="text-center">
+                <h2 class="mb-1 text-lg">Fruit Chat</h2>
+                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
+                <div class="flex justify-around mt-2">
+                    <span class="font-bold text-lg">Rs: 50</span>
+                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64">
+            <img class="h-40 mb-2 mx-auto" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
+            <div class="text-center">
+                <h2 class="mb-1 text-lg">Fruit Chat</h2>
+                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
+                <div class="flex justify-around mt-2">
+                    <span class="font-bold text-lg">Rs: 50</span>
+                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-64">
+            <img class="h-40 mb-2 mx-auto" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
+            <div class="text-center">
+                <h2 class="mb-1 text-lg">Fruit Chat</h2>
+                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
+                <div class="flex justify-around mt-2">
+                    <span class="font-bold text-lg">Rs: 50</span>
+                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
+                        <span>+</span>
+                        <span class="ml-4">Add</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script src="/js/app.css"></script>
 </body>
 </html>
