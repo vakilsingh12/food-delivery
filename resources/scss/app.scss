@@ -32,3 +32,23 @@ section.hero{
         color: $pure;
     }
 }
+.btn-primary{
+    background: $primary;
+    transition: $smooth;
+    &:hover{
+        background:$primary-hover;
+    }
+}
+
+section.cart{
+    background:$pure;
+    .amount{
+        color: $primary;
+    }
+}
+.textforget{
+    color: $primary;
+    &:hover{
+        color: $primary-hover;
+    }
+}
