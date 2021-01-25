@@ -1,4 +1,6 @@
 @import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
 body{
     font-family: 'loto',sans-serif;
     --webkit-font-smoothing:antialiased;
@@ -31,12 +33,18 @@ section.hero{
         border-color: $pure;
         color: $pure;
     }
+    &:focus{
+        outline: none;
+    }
 }
 .btn-primary{
     background: $primary;
     transition: $smooth;
     &:hover{
         background:$primary-hover;
+    }
+    &:focus{
+        outline: none;
     }
 }
 

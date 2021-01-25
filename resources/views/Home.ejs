@@ -1,102 +1,46 @@
-<%- include('header') -%>
-<section class="hero py-12">
-     <div class="container mx-auto flex justify-between items-center">
-         <div class="w-1/2">
-             <h1 class="text-5xl font-bold">Delicious Food</h1>
-             <h4><em>Real Speciality of Foods !</em></h4><br>
-             <button class="px-4 py-1 rounded-full text-white font-bold mt-4 btn-primary">Order Now</button>
-            </div>
-         <div class="w-1/2">
-             <img width="700" class="rounded-lg" src="https://www.diabetes.org/sites/default/files/styles/full_width/public/2019-04/Hero%20-%20Tips%20and%20Meal%20Planning_%20Meal%20Ideas%402x-min.jpg" alt="food">
-         </div>
-     </div>
-    </section>
-    <section class="menu container mx-auto py-8">
-    <h1 class="text-xl font-bold mb-8">Our Food Services</h1>
-    <div class="grid grid-cols-4 gap-x-12 gap-y-16">
-        <div class="w-64">
-            <img class="h-40 mb-2 mx-auto rounded" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
-            <div class="text-center">
-                <h2 class="mb-1 text-lg">Fruit Chat</h2>
-                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
-                <div class="flex justify-around mt-2">
-                    <span class="font-bold text-lg">Rs: 50</span>
-                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
-                        <span>+</span>
-                        <span class="ml-4">Add</span>
-                    </button>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('link') -%>
+</head>
+<body>
+    <%- include('header') -%>
+    <section class="hero py-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="w-1/2">
+                <h1 class="text-5xl font-bold">Delicious Food</h1>
+                <h4><em>Real Speciality of Foods !</em></h4><br>
+                <button class="px-4 py-1 rounded-full text-white font-bold mt-4 btn-primary"">Order Now</button>
+               </div>
+            <div class="w-1/2">
+                <img width="700" class="rounded-lg" src="https://www.diabetes.org/sites/default/files/styles/full_width/public/2019-04/Hero%20-%20Tips%20and%20Meal%20Planning_%20Meal%20Ideas%402x-min.jpg" alt="food">
             </div>
         </div>
-        <div class="w-64">
-            <img class="h-40 mb-2 mx-auto rounded" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
-            <div class="text-center">
-                <h2 class="mb-1 text-lg">Fruit Chat</h2>
-                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
-                <div class="flex justify-around mt-2">
-                    <span class="font-bold text-lg">Rs: 50</span>
-                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
-                        <span>+</span>
-                        <span class="ml-4">Add</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class="h-40 mb-2 mx-auto rounded" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
-            <div class="text-center">
-                <h2 class="mb-1 text-lg">Fruit Chat</h2>
-                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
-                <div class="flex justify-around mt-2">
-                    <span class="font-bold text-lg">Rs: 50</span>
-                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
-                        <span>+</span>
-                        <span class="ml-4">Add</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class="h-40 mb-2 mx-auto rounded" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
-            <div class="text-center">
-                <h2 class="mb-1 text-lg">Fruit Chat</h2>
-                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
-                <div class="flex justify-around mt-2">
-                    <span class="font-bold text-lg">Rs: 50</span>
-                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
-                        <span>+</span>
-                        <span class="ml-4">Add</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class="h-40 mb-2 mx-auto" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
-            <div class="text-center">
-                <h2 class="mb-1 text-lg">Fruit Chat</h2>
-                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
-                <div class="flex justify-around mt-2">
-                    <span class="font-bold text-lg">Rs: 50</span>
-                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
-                        <span>+</span>
-                        <span class="ml-4">Add</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-64">
-            <img class="h-40 mb-2 mx-auto" src="https://image.sciencenorway.no/1438480.jpg?imageId=1438480&panow=0&panoh=0&panox=0&panoy=0&heightw=0&heighth=0&heightx=0&heighty=0&width=1200&height=630" alt="">
-            <div class="text-center">
-                <h2 class="mb-1 text-lg">Fruit Chat</h2>
-                <span class="size  py-1 px-4 rounded-full uppercase text-xs">small</span>
-                <div class="flex justify-around mt-2">
-                    <span class="font-bold text-lg">Rs: 50</span>
-                    <button class="add_to_cart px-3 rounded-full flex items-center font-bold">
-                        <span>+</span>
-                        <span class="ml-4">Add</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+       </section>
+       <section class="menu container mx-auto py-8">
+       <h1 class="text-xl font-bold mb-8">Our Food Services</h1>
+       <div class="grid grid-cols-4 gap-x-12 gap-y-16">
+           <% pizzas.forEach(function(res){ %>
+           <div class="w-64">
+               <img class="h-40 mb-2 mx-auto rounded" src=<%- res.image -%> alt="">
+               <div class="text-center">
+                   <h2 class="mb-1 text-lg"><b><%= res.name %></b></h2>
+                   <span class="size  py-1 px-4 rounded-full uppercase text-xs"><%- res.size -%></span>
+                   <div class="flex justify-around mt-2">
+                       <span class="font-bold text-lg">Rs: <%- res.price -%></span>
+                       <button data-res="<%= JSON.stringify(res) %>" class="add_to_cart px-3 rounded-full flex items-center font-bold">
+                           <span>+</span>
+                           <span class="ml-4">Add</span>
+                       </button>
+                   </div>
+               </div>
+           </div>
+           <% }) %>
+   
+       </div>
+   </section>
+   <script src="../js/app.js"></script>
+</body>
+</html>
