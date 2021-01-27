@@ -3,9 +3,10 @@ const express=require('express');
 const session=require('express-session');
 const flash=require('express-flash');
 const MongoDbStore=require('connect-mongo')(session);
+const passport=require('passport');
 const app=express();
 app.use(express.json());
-
+app.use(express.urlencoded({extended:false}));
 const port=process.env.PORT||4000;
 const path=require('path');
 const public_path=path.join(__dirname,'Public');
@@ -15,7 +16,7 @@ app.set('view engine',"ejs");
 // database connection
 const mongoose=require('mongoose');
 var connection =mongoose.connection;
-const url='mongodb+srv://pizza:pizza@cluster0.7hhkx.mongodb.net/pizza?retryWrites=true&w=majority';
+const url=process.env.DB;
 mongoose.connect(url,{
     useUnifiedTopology:true,
     useNewUrlParser:true,
@@ -25,6 +26,7 @@ mongoose.connect(url,{
 }).catch((err)=>{
     console.log(err);
 })
+
 let mongoStore=new MongoDbStore({
     mongooseConnection:connection,
     collection:'session'
@@ -37,10 +39,16 @@ app.use(session({
     saveUninitialized:false,
     cookie:{maxAge:1000*60*60*24}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
 }));
+// passport config
+const passportInit=require('./app/config/passport');
+passportInit(passport);
+app.use(passport.initialize());
+app.use(passport.session());
 app.use(flash())
 // routers
 app.use((req,res,next)=>{
     res.locals.session=req.session
+    res.locals.user=req.user
     next()
 })
 require('./routes/web')(app);

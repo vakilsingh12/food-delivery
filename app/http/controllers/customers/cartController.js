@@ -25,7 +25,12 @@ function cartController(){
                 cart.totalPrice+=req.body.price
             }
             return res.json({totalQty:req.session.cart.totalQty});
+        },
+        logout(req,res){
+            req.logout();
+            return res.redirect('/login');
         }
+
     }
 }
 module.exports=cartController;
